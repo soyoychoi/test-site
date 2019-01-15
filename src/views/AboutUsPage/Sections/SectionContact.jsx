@@ -33,7 +33,7 @@ class SectionContact extends React.Component {
   handleChange = name => event => {
   this.setState({[name]: event.target.value});
 };
-onSignIn() {
+onSubmit() {
     const {email, name, company} = this.state;
     fetch("https://1d9lascwmj.execute-api.us-east-1.amazonaws.com/default/testSite", {
       method: "POST",
